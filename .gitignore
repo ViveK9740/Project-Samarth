@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment
+.env
+venv/
+.env/
+.venv/
+
+# Data files
+data/*.json
+data/*.png
+data/*.csv
+
+# VS Code
+.vscode/
+
+# Streamlit cache
+.streamlit/
