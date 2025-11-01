@@ -45,36 +45,36 @@ Project-Samarth/
 git clone https://github.com/<your-username>/Project-Samarth.git
 cd Project-Samarth/src
 ```
-###2️⃣ Create Virtual Environment
+### 2️⃣ Create Virtual Environment
 ```bash
 python -m venv venv
 venv\Scripts\activate       # On Windows
 # OR
 source venv/bin/activate    # On Linux/Mac
 ```
-###3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
-###4️⃣ Run Data Processing
+### 4️⃣ Run Data Processing
 ```bash
 python data_process.py
 ```
-###5️⃣ Launch the App
+### 5️⃣ Launch the App
 ```bash
 streamlit run app.py
 ```
 Then open your browser at http://localhost:8501
 
-🧪 Working Prototype
+### 🧪 Working Prototype
 
 👉 Try it Live on Streamlit Cloud
 
 (Replace this link after deployment)
 
 
-🧰 Tech Stack
+### 🧰 Tech Stack
 
 Python 3.9+
 
@@ -86,14 +86,15 @@ pandas, numpy – Data processing
 
 matplotlib – Visualizations
 
-🧩 Example Queries
+### 🧩 Example Queries
 Type	Example Question
 💰 Price	“What is the price of onion in Maharashtra?”
 📈 Trend	“Show the price trend of tomato in Karnataka.”
 🏪 Highest	“Which market has the highest potato price?”
 📉 Lowest	“Where is wheat cheapest?”
 📆 Time-based	“What was the average rice price last month?”
-🎥 Demo Video
+
+### 🎥 Demo Video
 
 🎬 Watch the Loom demo here → (https://www.loom.com/share/d7592bba956447438fe9391c3e5896ff)
 
@@ -106,7 +107,7 @@ Data is refreshed and cleaned automatically.
 Visual charts and smart NLP understanding are showcased.
 
 
-🏁 Future Enhancements
+### 🏁 Future Enhancements
 
 Integrate rainfall correlation (IMD data)
 
@@ -115,7 +116,7 @@ Support multilingual queries (Hindi, Kannada, etc.)
 Advanced model fine-tuning using BERT-based QA
 
 
-👨‍💻 Author
+### 👨‍💻 Author
 
 Vivek Y
 📍 Bangalore, India
