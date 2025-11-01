@@ -12,7 +12,7 @@ DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 os.makedirs(DATA_DIR, exist_ok=True)
 
 API_URL = "https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070"
-API_KEY = "579b464db66ec23bdd0000018abf3ffd640741a37a72560a94ff1071"  # Replace this with your API key
+API_KEY = "--"  # Replace this with your API key
 
 def fetch_agmarknet_data(limit=5000, max_records=10000):
     """Fetch mandi data in batches and save as JSON."""
