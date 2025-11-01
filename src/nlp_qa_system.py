@@ -15,14 +15,13 @@ import spacy
 import subprocess
 import importlib.util
 
-
-# Ensure spaCy model is installed
-model_name = "en_core_web_sm"
-if not importlib.util.find_spec(model_name):
-    subprocess.run(["python", "-m", "spacy", "download", model_name])
-
 # Load NLP model
-nlp = spacy.load("en_core_web_sm")
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    from spacy.cli import download
+    download("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
 
 # ---------------------------------------------------------
 # Load and prepare data
