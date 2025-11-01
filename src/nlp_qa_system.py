@@ -11,6 +11,15 @@ import numpy as np
 from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 import spacy
+import spacy
+import subprocess
+import importlib.util
+
+
+# Ensure spaCy model is installed
+model_name = "en_core_web_sm"
+if not importlib.util.find_spec(model_name):
+    subprocess.run(["python", "-m", "spacy", "download", model_name])
 
 # Load NLP model
 nlp = spacy.load("en_core_web_sm")
