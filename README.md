@@ -44,27 +44,27 @@ Project-Samarth/
 ```bash
 git clone https://github.com/<your-username>/Project-Samarth.git
 cd Project-Samarth/src
-
-2️⃣ Create Virtual Environment
-
+```
+###2️⃣ Create Virtual Environment
+```bash
 python -m venv venv
 venv\Scripts\activate       # On Windows
 # OR
 source venv/bin/activate    # On Linux/Mac
-
-3️⃣ Install Dependencies
-
+```
+###3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
-
-4️⃣ Run Data Processing
-
+```
+###4️⃣ Run Data Processing
+```bash
 python data_process.py
-
-5️⃣ Launch the App
-
+```
+###5️⃣ Launch the App
+```bash
 streamlit run app.py
-
+```
 Then open your browser at http://localhost:8501
 
 🧪 Working Prototype
